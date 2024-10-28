@@ -143,6 +143,15 @@ button:hover{
     font-size: 3rem;
     margin-bottom: 100px;
 }
+.section-experience{
+    border: 1px solid;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 600px;
+}
 .small-card{
     display: flex;
     align-items: stretch;
@@ -158,6 +167,9 @@ button:hover{
     }
 }
 #title-exp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 20px;
 }
 #contact{
@@ -252,6 +264,83 @@ button:hover{
     section{
         margin: 0 5%;
     }
+    .section-pic-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .section-details{
+        padding-left: 0;
+    }
+    .section-experience{
+        height: auto;
+        width: 350px;
+        .cards{
+            padding: 30px;
+        }
+        .box{
+            display: flex;
+        }
+        .cards img{
+            margin-top: 5px;
+            height: 25px;
+            width: 35px
+        }
+        .small-card{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+    }
+    .section-project1,.section-project2{
+        margin-top: 20px;
+        padding: 25px 0;
+        height: auto;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        border: 1px solid;
+        border-radius: 20px;
+        img{
+            height: 300px;
+            border-radius: 20px;
+        }
+    }
+    .section-contact{
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 350px;
+        border: 1px solid;
+        border-radius: 20px;
+        img{
+            height: 3rem;
+            padding-inline: 0.5rem;
+        }
+        .social-contact{
+           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #linkedin{
+                height: 2.5rem;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
     
 }
 /* @media screen and (max-width: 1200px) {
