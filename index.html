@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@100;300;400;700;900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+</head>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <h1 id="name">
+                Prak Visal
+            </h1>
+            <div >
+                <ul class="nav-links">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobile-nav">
+            <h1 id="name">
+                Prak Visal
+            </h1>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <section id="profile">
+            <div id="pf">
+                <img src="assets/pf2.jpg" alt="mypf">
+            </div>
+            <div id="details">
+                <p>Hello, I'm</p>
+                <h1>Prak Visal</h1>
+                <h3>Frontend Developer</h3>
+                <div id="btn">
+                    <button>Download CV</button>
+                    <button class="btn-contact">Contact Info</button>
+                </div>
+                <div id="social">
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section_text_p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+               <div class="section-pic-container">
+                   <img src="assets/pf1.JPG" alt="picture">
+               </div>
+               <div class="section-details">
+                   <div class="cards">
+                       <div class="section-exp">
+                           <img src="assets/experience.png" alt="experience">
+                           <h1 class="exp">Experience</h1>
+                           <p>1+ years</p>
+                           <p>Frontend</p>
+                           <p>Development</p>
+                       </div>
+                       <div class="section-edu">
+                           <img src="assets/education.png" alt="experience">
+                           <h1 class="exp">Education</h1>
+                           <p>Computer Science</p>
+                           <p>Bachelors</p>
+                           <p>Degree</p>
+                       </div>
+                   </div>
+                   <div class="section-description">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde corporis laudantium quam at! Sapiente alias itaque doloribus maxime vitae odio! Temporibus delectus optio modi sint impedit aut ea fugit?
+                   </div>
+               </div>
+            </div>
+        </section>
+        <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+               <div class="cards">
+                   <div class="section-exp">
+                    <h1 id="title-exp">Frontend Development</h1>
+                    <div class="small-card">
+                        <img src="assets/checkmark.png" alt="experience">
+                        <div class="text">
+                            <h1>HTML</h1>
+                            <p>Experience</p>
+                        </div>
+
+                        <img src="assets/checkmark.png" alt="experience">
+                        <div class="text">
+                            <h1>CSS</h1>
+                            <p>Average</p>
+                        </div>
+
+                        <img src="assets/checkmark.png" alt="experience">
+                        <div class="text">
+                            <h1>JavaScript</h1>
+                            <p>Basic</p>
+                        </div>
+
+                        <img src="assets/checkmark.png" alt="experience">
+                        <div class="text">
+                            <h1>TypeScript</h1>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                   </div>
+               </div>
+        </div>
+        </section>
+
+        <section id="project">
+
+            <p class="section_text_p1">View my recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="section-project">
+                <div class="section-project1">
+                    <img id="project1" src="assets/project-1.png" alt="">
+                    <h1>Quiz Website</h1>
+                    <div id="btn">
+                        <button>Source Code</button>
+                        <button class="btn-contact">Live Demo</button>
+                    </div>
+                </div>
+
+                <div class="section-project2">
+                    <img id="project2" src="assets/project-2.png" alt="">
+                    <h1>Calculator</h1>
+                    <div id="btn">
+                        <button>Source Code</button>
+                        <button class="btn-contact">Live Demo</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="section-contact">
+        <div class="social-contact">
+            <img id="email" src="assets/email.png" alt="">
+            <h1>visalprak456@gmail.com</h1>
+            <img id="linkedin" src="assets/linkedin.png" alt="">
+            <h1>PrakVisal</h1>
+        </div>
+    </div>
+    <nav id="dekstop-nav">
+        <div >
+            <ul class="nav-links">
+                <li><a href="">About</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h4>Inspired from Jonh Doe</h4>
+    <h3>Copyright © 2024 Prak Visal. All Rights Reserved.</h3>
+
+        </section>
+</body>
+</html>
