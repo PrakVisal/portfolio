@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,7 +50,7 @@
             </div>
         </nav>
     </header>
-    <section id="profile">
+    <section data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" id="profile">
         <div id="pf">
             <img src="assets/pf2.jpg" alt="mypf">
         </div>
@@ -66,7 +68,7 @@
             </div>
         </div>
     </section>
-    <section id="about">
+    <section data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" id="about">
         <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -98,7 +100,7 @@
             </div>
         </div>
     </section>
-    <section id="experience">
+    <section data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000" id="experience">
         <p class="section_text_p1">Explore My</p>
         <h1 class="title">Experience</h1>
         <div class="section-experience">
@@ -142,7 +144,7 @@
             </div>
         </div>
     </section>
-    <section id="project">
+    <section data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" id="project">
 
         <p class="section_text_p1">View my recent</p>
         <h1 class="title">Projects</h1>
@@ -169,7 +171,7 @@
 
     </section>
 
-    <section id="contact">
+    <section data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" id="contact">
         <p class="section_text_p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="section-contact">
@@ -181,7 +183,7 @@
                 <div class="row">
 
                     <img id="linkedin" src="assets/linkedin.png" alt="">
-                    <h1>PrakVisal</h1>
+                    <h1 id="text">PrakVisal</h1>
                 </div>
 
             </div>
@@ -196,9 +198,15 @@
                 </ul>
             </div>
         </nav>
-        <h4>Inspired from Jonh Doe</h4>
-        <h3>Copyright © 2024 Prak Visal. All Rights Reserved.</h3>
+        <div class="author">
+            <h4>Inspired from Jonh Doe</h4>
+            <h3>Copyright © 2024 Prak Visal. All Rights Reserved.</h3>
+        </div>
+      
     </section>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
