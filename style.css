@@ -85,6 +85,12 @@ button:hover{
     color: black;
     background-color: greenyellow;   
 }
+button:active{
+    background-color: rgb(80, 80, 80);
+}
+.btn-contact:active{
+    background-color: rgb(154, 207, 75);
+}
 #social a{
     font-size: 2rem;
 }
@@ -141,6 +147,7 @@ button:hover{
 }
 .section-description{
     padding-left: 20px;
+    width: 75rem;
 }
 .section_text_p1,.title{
     display: flex;
@@ -247,11 +254,13 @@ button:hover{
     justify-content: center;
 }
 .section-project{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 3rem;
     align-items: center;
     justify-content: space-around;
 }
-.section-project1,.section-project2{
+.section-project-content{
     height: auto;
     width: 600px;
     display: flex;
@@ -285,6 +294,7 @@ button:hover{
         justify-content: center;
     }
     #pf{
+        margin-top: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -323,6 +333,9 @@ button:hover{
     .section-details{
         padding-left: 0;
     }
+    .section-description{
+        width: auto;
+    }
     .section-experience{
         padding: 1rem;
         height: auto;
@@ -350,7 +363,7 @@ button:hover{
             
         }
     }
-    .section-project1,.section-project2{
+    .section-project-content{
         margin-top: 20px;
         padding: 25px 0;
         height: auto;
